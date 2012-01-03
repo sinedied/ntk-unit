@@ -1,0 +1,25 @@
+NTK/Unit is a minimalistic yet easily extensible unit testing framework.
+The whole framework is self-contained in a single documented header file, 
+and thus can be used without any library installation.
+
+The code is designed to be portable and only use the standard c++ headers,
+and does not make use of RTTI functions.
+
+It notably features:
+- Test fixtures
+- Test suites (with possible subsuites)
+- Exception handling (with support for system exceptions, i.e. signals)
+- Global timing
+- Customizable reporting
+- Simple and very compact syntax with the use of macros
+- A bunch of assertions macros covering most needs
+
+This release contains 2 files:
+- test.hpp         : the testing framework.
+- test_example.cpp : a unit test example testing all the framework functions
+                     using itself.
+
+The code has only been tested on MacOS X 10.6 with GCC 4.2 for now, but 
+should compile on any recent platform.
+
+NTK/Unit is released under the MIT license.
